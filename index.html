@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu Responsivo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <div class="logo">Hámburgueria Maravilha</div>
+      <div class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" role="button" tabindex="0">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <nav id="navLinks" role="navigation">
+        <ul class="menu" role="menubar">
+          <li><a href="#home" role="menuitem">Início</a></li>
+          <li class="has-submenu">
+            <a href="#sobre" aria-expanded="false" role="menuitem">Sobre</a>
+            <ul class="submenu" aria-hidden="true">
+              <li><a href="#historia" role="menuitem">Nossa História</a></li>
+              <li><a href="#valores" role="menuitem">Missão & Valores</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="#servicos" aria-expanded="false" role="menuitem">Serviços</a>
+            <ul class="submenu" aria-hidden="true">
+              <li><a href="#delivery" role="menuitem">Delivery</a></li>
+              <li><a href="#reservas" role="menuitem">Reservas</a></li>
+              <li><a href="#eventos" role="menuitem">Eventos</a></li>
+            </ul>
+          </li>
+          <li class="has-submenu">
+            <a href="#contato" aria-expanded="false" role="menuitem">Contato</a>
+            <ul class="submenu" aria-hidden="true">
+              <li><a href="#">📞 (11) 99999-0000</a></li>
+              <li><a href="#">🏠 Rua das Delícias, 123 - Centro</a></li>
+              <li><a href="mailto:contato@hamburgueriamaravilha.fake">📧 contato@hamburgueriamaravilha.fake</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main style="padding: 2rem;">
+    <section id="cardapio">
+      <h2>🍔 Nosso Cardápio</h2>
+      <div class="grid-cardapio">
+        <div class="item">
+          <img src="public/classico.jpg" alt="Hambúrguer Clássico" />
+          <h3>Clássico</h3>
+          <p>Pão, carne, queijo, alface, tomate e maionese da casa.</p>
+          <p><strong>R$ 18,00</strong></p>
+        </div>
+        <div class="item">
+          <h3>Cheddar Bacon</h3>
+          <img src="public/cheddarbaconcheeseburger.jpg" alt="Hambúrguer Cheddar Bacon" />
+          <p>Carne suculenta, cheddar derretido e muito bacon!</p>
+          <p><strong>R$ 22,00</strong></p>
+        </div>
+        <div class="item">
+          <img src="public/vegetariano.webp" alt="Hambúrguer Vegetariano" />
+          <h3>Vegetariano</h3>
+          <p>Burger de grão-de-bico com salada fresca e molho especial.</p>
+          <p><strong>R$ 19,00</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" style="margin-top: 3rem;">
+      <h2>📞 Contato</h2>
+      <p>Faça seu pedido pelo WhatsApp: <strong>(11) 99999-0000</strong></p>
+      <p>Ou nos visite: Rua das Delícias, 123 - Centro</p>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
